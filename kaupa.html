@@ -1,0 +1,131 @@
+<!doctype html>
+<html class="grid" lang="is">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kaupa</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="styleguide.css">
+  <!--   <link rel="stylesheet" href="grid.css"> -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="menu">
+    <h3> Fooþjónustan </h3>
+    <button type="button" name="um"> Um </button>
+    <button type="button" name="kaupa"> Kaupa </button>
+  </div>
+
+  <header>
+    <h1>Kaupa</h1>
+  </header>
+
+  <main>
+    <form method="get" action="./kaupa.html">
+      <fieldset>
+        <legend>Persónuupplýsingar</legend>
+        <div>
+          <label for="name">Nafn:</label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div>
+          <label for="id-number">Kennitala</label>
+          <input type="text" name="id-number" placeholder="123456-7890" id="id-number">
+        </div>
+        <div>
+        </div>
+        <div>
+          <p>Kyn:</p>
+          <label>
+            <input type="radio" name="gender" value="male"> Karl
+          </label>
+          <label>
+            <input type="radio" name="gender" value="female"> Kona
+          </label>
+          <label>
+            <input type="radio" name="gender" value="other"> Annað
+          </label>
+        </div>
+        <div>
+          <label for="tel">Sími:</label>
+          <input type="tel" name="tel" value="+354 812 3456" id="tel" required>
+        </div>
+        <div>
+          <label for="adress">Heimilisfang</label>
+          <input type="text" name="adress" id="adress" required>
+        </div>
+        <div>
+          <label>
+            <input type="checkbox" name="email-list" checked> Skrá mig á póstlista
+          </label>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Greiðsluupplýsingar</legend>
+        <div>
+          <label for="card-type">Greiða með:</label>
+          <select id="card-type">
+            <option value="kredit">Kreditkort</option>
+            <option value="debit">Debitkort</option>
+            <option value="amex">American Express</option>
+          </select>
+        </div>
+        <div>
+          <label for="card-name">Nafn á korti:</label>
+          <input type="text" name="card-name" id="card-name" required>
+        </div>
+        <div>
+          <label for="card-nr">Kortanúmer:</label>
+          <input type="text" name="card-nr" placeholder="5999-9999-9999-9999" id="card-nr" required>
+        </div>
+        <div>
+            <label for="exp-date-month">Mán</label>
+            <select name="exp-date-month" id="exp-date-month">
+              <option value='01'>01</option>
+              <option value='02'>02</option>
+              <option value='03'>03</option>
+              <option value='04'>04</option>
+              <option value='05'>05</option>
+              <option value='06'>06</option>
+              <option value='07'>07</option>
+              <option value='08'>08</option>
+              <option value='09'>09</option>
+              <option value='10'>10</option>
+              <option value='11'>11</option>
+              <option value='12'>12</option>
+            </select>
+
+            <label for="exp-date-year">Ár</label>
+            <select name="exp-date-year" id="exp-date-year">
+              <option value="17">2017</option>
+              <option value="18">2018</option>
+              <option value="19">2019</option>
+              <option value="20">2020</option>
+              <option value="21">2021</option>
+              <option value="22">2022</option>
+              <option value="23">2023</option>
+            </select>
+        </div>
+      </fieldset>
+      <button type="submit" name="order">Panta</button>
+    </form>
+  </main>
+  <footer>
+    <div>
+      <p>Fooþjónusta</p>
+      <p>123-4567</p>
+    </div>
+    <div>
+      <p>Opið 12-13 alla daga</p>
+      <p>Bargata 1</p>
+      <p>900 Foobar</p>
+      <p>© Fooþjónustan 2017</p>
+    </div>
+  </footer>
+</body>
+
+</html>
