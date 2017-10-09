@@ -1,12 +1,11 @@
-.heading{
-
-  &--header--one{
+.heading {
+  &--header--one {
     font-size: 1.5em;
     animation: fadein 2s;
   }
 
-  &--header--two{
-    font-size: 3em;
+  &--header--two {
     margin-bottom: 1em;
+    font-size: 3em;
   }
 }
