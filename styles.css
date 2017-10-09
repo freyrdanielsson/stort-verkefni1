@@ -13,14 +13,9 @@ html {
 
 html {
   /* stylelint-disable-line */
-  margin-right: 20px;
-  margin-left: 20px;
   font-family: "Open Sans", helvetica, arial, sans-serif;
   font-size: 16px;
   line-height: 1.5; }
-  @media (min-width: 1200px) {
-    html {
-      margin: 0; } }
 
 img {
   /* stylelint-disable-line */
@@ -29,13 +24,39 @@ img {
 main {
   /* stylelint-disable-line */
   max-width: 1200px;
-  margin: 0 auto;
+  margin: 0 20px;
   overflow-x: hidden; }
+  @media (min-width: 1200px) {
+    main {
+      margin: 0; } }
 
-
-footer {
-  display: flex; }
-
+.footer {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  width: 100%;
+  min-height: 200px;
+  color: #fff;
+  flex-direction: column;
+  background-color: #333;
+  justify-content: space-around; }
+  .footer--info {
+    display: flex;
+    margin: 1em 20%;
+    align-content: center;
+    justify-content: space-around; }
+  .footer__text {
+    text-align: center; }
+  .footer--logo {
+    width: 1200px;
+    max-width: 98%;
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #aaa;
+    text-align: center;
+    align-self: center;
+    border-top: 2px solid #aaa; }
 
 .index-header {
   display: flex;
