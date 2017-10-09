@@ -31,3 +31,50 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   overflow-x: hidden; }
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+  padding: 2em;
+  width: 100%;
+  min-height: 600px;
+  background: transparent url(bg.jpg) no-repeat fixed 50% 50%;
+  background-size: cover; }
+  header .content {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center; }
+
+.button {
+  width: 100%;
+  max-width: 256px;
+  padding: 10px 5px;
+  margin: 0;
+  overflow: hidden;
+  font-size: 1rem;
+  color: #eee;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: #666;
+  border: 1px solid #666;
+  border-radius: 4px;
+  transition: background-color 500ms ease; }
+  .button:hover {
+    color: #eee;
+    background-color: #333; }
+  .button__header {
+    width: auto;
+    font-size: 1.5em; }
+
+.heading--header--one {
+  font-size: 1.5em;
+  animation: fadein 2s; }
+
+.heading--header--two {
+  font-size: 3em;
+  margin-bottom: 1em; }
