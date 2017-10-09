@@ -1,0 +1,25 @@
+.menubar {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  color: #fff;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  &__buttons {
+    display: flex;
+    width: auto;
+    flex-direction: row;
+  }
+
+  &__heading {
+    align-content: center;
+    padding: 5px $gutter;
+  }
+
+  .button {
+    width: auto;
+  }
+}

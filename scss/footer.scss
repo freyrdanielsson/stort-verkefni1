@@ -10,7 +10,7 @@
   background-color: #333;
   justify-content: space-around;
 
-  &--info {
+  &__info {
     display: flex;
     margin: 1em 20%;
     align-content: center;
@@ -21,7 +21,7 @@
     text-align: center;
   }
 
-  &--logo {
+  &__logo {
     width: $max-width;
     max-width: 98%;
     padding: $gutter;

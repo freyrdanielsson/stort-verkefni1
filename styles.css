@@ -40,14 +40,14 @@ main {
   flex-direction: column;
   background-color: #333;
   justify-content: space-around; }
-  .footer--info {
+  .footer__info {
     display: flex;
     margin: 1em 20%;
     align-content: center;
     justify-content: space-around; }
   .footer__text {
     text-align: center; }
-  .footer--logo {
+  .footer__logo {
     width: 1200px;
     max-width: 98%;
     padding: 20px;
@@ -97,10 +97,30 @@ main {
     width: auto;
     font-size: 1.5em; }
 
-.heading--header--one {
-  font-size: 1.5em;
-  animation: fadein 2s; }
+.heading {
+  font-family: "Roboto Slab", serif; }
+  .heading--header--one {
+    font-size: 1.5em;
+    animation: fadein 2s; }
+  .heading--header--two {
+    margin-bottom: 1em;
+    font-size: 3em; }
 
-.heading--header--two {
-  font-size: 3em;
-  margin-bottom: 1em; }
+.menubar {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  color: #fff;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.7); }
+  .menubar__buttons {
+    display: flex;
+    width: auto;
+    flex-direction: row; }
+  .menubar__heading {
+    align-content: center;
+    padding: 5px 20px; }
+  .menubar .button {
+    width: auto; }
