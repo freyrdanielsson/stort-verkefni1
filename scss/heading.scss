@@ -1,0 +1,12 @@
+.heading{
+
+  &--header--one{
+    font-size: 1.5em;
+    animation: fadein 2s;
+  }
+
+  &--header--two{
+    font-size: 3em;
+    margin-bottom: 1em;
+  }
+}

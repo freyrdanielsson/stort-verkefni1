@@ -41,3 +41,7 @@ main { /* stylelint-disable-line */
   // hér sem hidden, þá fáum við ekki lárétta skrunstiku
   overflow-x: hidden;
 }
+
+@import "scss/indexheader";
+@import "scss/button";
+@import "scss/heading";
