@@ -1,0 +1,30 @@
+.button {
+
+  width: 100%;
+  max-width: 256px;
+  padding: 10px 5px;
+  margin: 0;
+  overflow: hidden;
+  font-size: 1rem;
+  color: #eee;
+  text-align: center;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  background-color: #666;
+  border: 1px solid #666;
+  border-radius: 4px;
+  transition: background-color 500ms ease;
+
+  &:hover {
+    color: #eee;
+    background-color: #333;
+  }
+
+  &__header {
+    width: auto;
+    font-size: 1.5em;
+  }
+
+}

@@ -1,0 +1,24 @@
+header {
+  display: flex;
+  flex-direction: column;
+
+
+  margin-bottom: 2em;
+  padding: 2em;
+
+  width: 100%;
+  min-height: 600px;
+
+  background: transparent url(bg.jpg) no-repeat fixed 50% 50%;
+  background-size: cover;
+
+
+
+  .content {
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+
+}
+}
