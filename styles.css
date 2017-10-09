@@ -32,10 +32,9 @@ main {
   margin: 0 auto;
   overflow-x: hidden; }
 
-<<<<<<< HEAD
 footer {
   display: flex; }
-=======
+
 header {
   display: flex;
   flex-direction: column;
@@ -82,4 +81,3 @@ header {
 .heading--header--two {
   font-size: 3em;
   margin-bottom: 1em; }
->>>>>>> 9ce1b0d4099fe1d7f07fb8f96e254cdd9afda0e3
