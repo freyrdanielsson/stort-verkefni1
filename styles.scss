@@ -20,7 +20,7 @@ html { /* stylelint-disable-line */
   margin-right: $gutter;
   margin-left: $gutter;
 
-  font-family: Lato, helvetica, arial, sans-serif;
+  font-family: "Open Sans", helvetica, arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
 
@@ -41,3 +41,5 @@ main { /* stylelint-disable-line */
   // hér sem hidden, þá fáum við ekki lárétta skrunstiku
   overflow-x: hidden;
 }
+
+@import "scss/footer";
