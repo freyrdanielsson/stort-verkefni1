@@ -14,16 +14,10 @@ html { /* stylelint-disable-line */
 }
 
 html { /* stylelint-disable-line */
-  // til þess að texti liggi ekki upp við brún á viewport þegar
-  // við erum < 1200px breiðum skjá, setjum margin á báða kanta html
-  // ruglar líka ekki í grid overlay
-
 
   font-family: "Open Sans", helvetica, arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-
-
 }
 
 img { /* stylelint-disable-line */
@@ -39,6 +33,9 @@ main { /* stylelint-disable-line */
   // hér sem hidden, þá fáum við ekki lárétta skrunstiku
   overflow-x: hidden;
 
+  @media (min-width: $max-width) {
+    margin: 0;
+  }
 }
 
 @import "scss/footer";
