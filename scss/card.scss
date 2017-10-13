@@ -1,16 +1,11 @@
 .card {
   width: 100%;
   min-width: 200px;
-  max-width: 800px;
+  max-width: 600px;
   overflow: hidden;
   background-color: #eee;
-  border-radius: 3px;
-  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
-  transition: background-color 500ms ease;
 
-  &:hover {
-    background-color: #ddd;
-  }
+
 
   &--wide {
     @media (min-width: 600px) {
@@ -18,22 +13,12 @@
     }
   }
 
-  &__heading {
-    width: 100%;
-    margin-bottom: 15px;
-    font-family: Merriweather, georgia, serif;
-    font-size: 1.5rem;
-    word-break: break-word;
-  }
-
   &__content {
     display: flex;
     padding: 15px;
     flex-direction: column;
     align-items: center;
-    @media (min-width: 600px) {
-      align-items: flex-start;
-    }
+
   }
 
   &__text {
@@ -42,10 +27,11 @@
 
   &__img {
     width: 100%;
-    min-width: 200px;
+    min-width: 100px;
     max-width: 100%;
+    border-radius: 50%;
     @media (min-width: 600px) {
-      min-width: 400px;
+      min-width: 200px;
       height: 100%;
       object-fit: cover;
     }
