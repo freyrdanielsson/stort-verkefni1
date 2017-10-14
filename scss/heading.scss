@@ -1,20 +1,32 @@
 .heading {
   font-family: "Roboto Slab", serif;
 
+
   &--header--one {
     font-size: 1.5em;
-    animation: fadein 2s;
+    animation: 1s fade ease-in;
+    @keyframes fade {
+      from { opacity: 0;}
+      to { opacity: 1;}
+    }
+
   }
 
   &--header--two {
     margin-bottom: 1em;
     font-size: 3em;
+    animation: 2s fade ease-in;
+    @keyframes fade {
+      from { opacity: 0;}
+      50% { opacity: 0;}
+      to { opacity: 1;}
+    }
   }
 
-  &--header--menubar {
+ &--header--menubar {
     font-size: 1.5em;
     font-weight: 700;
     color: #fff;
     text-decoration: none;
-  }
+ }
 }
