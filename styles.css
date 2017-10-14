@@ -102,5 +102,5 @@ main {
   animation: fadein 2s; }
 
 .heading--header--two {
-  font-size: 3em;
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+  font-size: 3em; }
