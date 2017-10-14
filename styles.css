@@ -138,6 +138,10 @@ main {
     font-weight: 700;
     color: #fff;
     text-decoration: none; }
+  .heading--header--kaupa {
+    padding: 0 10px;
+    font-size: 3em;
+    color: #fff; }
 
 .menubar {
   position: fixed;
@@ -190,6 +194,8 @@ main {
       width: 66.66667%; }
     .col-sm-4 {
       width: 33.33333%; } }
+  .col-center {
+    margin: 0 auto; }
 
 .card {
   width: 100%;
@@ -235,3 +241,15 @@ main {
   @media (min-width: 599px) {
     .cardlist .cardlist__col {
       width: 33.33333%; } }
+
+.kaupa__header {
+  display: flex;
+  width: 100%;
+  min-height: 600px;
+  margin-right: 0;
+  margin-bottom: 2em;
+  margin-left: 0;
+  flex-direction: column;
+  justify-content: center;
+  background: transparent url("bg-subpage.jpg") no-repeat fixed 50% 50%;
+  background-size: cover; }
