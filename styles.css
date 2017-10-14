@@ -40,14 +40,14 @@ main {
   flex-direction: column;
   background-color: #333;
   justify-content: space-around; }
-  .footer--info {
+  .footer__info {
     display: flex;
     margin: 1em 20%;
     align-content: center;
     justify-content: space-around; }
   .footer__text {
     text-align: center; }
-  .footer--logo {
+  .footer__logo {
     width: 1200px;
     max-width: 98%;
     padding: 20px;
@@ -110,28 +110,58 @@ main {
   to {
     opacity: 1; } }
 
-.heading--header--one {
+.heading {
+  font-family: "Roboto Slab", serif; }
+  
+  .heading--header--one {
   font-size: 1.5em;
   animation: 1s fade ease-in; }
 
-@keyframes fade {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
+  @keyframes fade {
+    from {
+      opacity: 0; }
+    to {
+      opacity: 1; } }
 
-.heading--header--two {
+   .heading--header--two {
   font-size: 3em;
   margin-bottom: 1em;
   animation: 2s fade ease-in; }
 
-@keyframes fade {
-  from {
-    opacity: 0; }
-  50% {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
+  @keyframes fade {
+    from {
+      opacity: 0; }
+    50% {
+      opacity: 0; }
+    to {
+      opacity: 1; } }
+
+  .heading--header--menubar {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none; }
+
+.menubar {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  padding: 5px;
+  color: #fff;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.8); }
+  .menubar__buttons {
+    display: flex;
+    width: auto;
+    flex-direction: row; }
+  .menubar .button {
+    width: auto;
+    padding: 5px; }
+  .menubar .button__about {
+    background-color: transparent;
+    border: 0; }
 
 .row {
   display: flex;
@@ -208,3 +238,4 @@ main {
   @media (min-width: 599px) {
     .cardlist .cardlist__col {
       width: 33.33333%; } }
+
