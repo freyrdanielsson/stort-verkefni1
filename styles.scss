@@ -14,6 +14,7 @@ html { /* stylelint-disable-line */
 }
 
 html { /* stylelint-disable-line */
+
   font-family: "Open Sans", helvetica, arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -25,14 +26,15 @@ img { /* stylelint-disable-line */
 
 main { /* stylelint-disable-line */
   max-width: $max-width;
-  margin: 0 $gutter;
+  margin: 0 auto;
+
 
   // þar sem við erum að eiga við neikvæð margin á grid, setjum overflow-x
   // hér sem hidden, þá fáum við ekki lárétta skrunstiku
   overflow-x: hidden;
 
   @media (min-width: $max-width) {
-    margin: 0;
+    margin: auto;
   }
 }
 
@@ -40,3 +42,7 @@ main { /* stylelint-disable-line */
 @import "scss/indexheader";
 @import "scss/button";
 @import "scss/heading";
+@import "scss/menubar";
+@import "scss/grid";
+@import "scss/card";
+@import "scss/cardlist";

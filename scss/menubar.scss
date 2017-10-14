@@ -1,0 +1,27 @@
+.menubar {
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  padding: 5px;
+  color: #fff;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.8);
+
+  &__buttons {
+    display: flex;
+    width: auto;
+    flex-direction: row;
+  }
+
+  .button {
+    width: auto;
+    padding: 5px;
+  }
+
+  .button__about {
+    background-color: rgba(0, 0, 0, 0);
+    border: 0;
+  }
+}
