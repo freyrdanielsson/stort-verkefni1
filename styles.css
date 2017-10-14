@@ -105,6 +105,11 @@ main {
   .heading--header--two {
     margin-bottom: 1em;
     font-size: 3em; }
+  .heading--header--menubar {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none; }
 
 .menubar {
   position: fixed;
@@ -112,15 +117,17 @@ main {
   z-index: 2;
   display: flex;
   width: 100%;
+  padding: 5px;
   color: #fff;
   justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.7); }
+  background-color: rgba(0, 0, 0, 0.8); }
   .menubar__buttons {
     display: flex;
     width: auto;
     flex-direction: row; }
-  .menubar__heading {
-    align-content: center;
-    padding: 5px 20px; }
   .menubar .button {
-    width: auto; }
+    width: auto;
+    padding: 5px; }
+  .menubar .button__about {
+    background-color: transparent;
+    border: 0; }
