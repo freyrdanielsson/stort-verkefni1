@@ -47,10 +47,22 @@
         @include columns(8);
       }
 
+      &-6 {
+        @include columns(6);
+      }
+
       &-4 {
         @include columns(4);
       }
       // todo útfæra rest af sm grid
+    }
+  }
+
+  &-mm {
+    @media (max-width: 400px) {
+      &-12 {
+        @include columns(12);
+      }
     }
   }
 

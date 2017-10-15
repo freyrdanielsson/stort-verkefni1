@@ -32,8 +32,8 @@ main { /* stylelint-disable-line */
   // hér sem hidden, þá fáum við ekki lárétta skrunstiku
   overflow-x: hidden;
 
-  @media (min-width: $max-width) {
-    margin: auto;
+  @media (max-width: 600px) {
+    margin: 0 $gutter;
   }
 }
 
