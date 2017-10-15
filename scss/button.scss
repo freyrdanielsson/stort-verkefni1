@@ -26,12 +26,23 @@
     width: auto;
     padding-right: 0.5em;
     padding-left: 0.5em;
-    font-size: 1.5em;
+    font-size: 1.75em;
     animation: 3s fade ease-in;
     @keyframes fade {
       from { opacity: 0; }
       67% { opacity: 0; }
       to { opacity: 1; }
+    }
+  }
+
+  &__bottom {
+    width: auto;
+    padding: 0.25em 2em;
+    font-size: 1.5em;
+
+    @media (max-width: 435px) {
+      padding: 0.5em 3.5em;
+      font-size: 1em;
     }
   }
 

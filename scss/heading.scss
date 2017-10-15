@@ -2,7 +2,7 @@
   font-family: "Roboto Slab", serif;
 
   &--header--one {
-    font-size: 1.5em;
+    font-size: 2em;
     animation: 1s fade ease-in;
     @keyframes fade {
       from { opacity: 0; }
@@ -13,7 +13,7 @@
 
   &--header--two {
     margin-bottom: 1em;
-    font-size: 3em;
+    font-size: 4em;
     animation: 2s fade ease-in;
     @keyframes fade {
       from { opacity: 0; }
@@ -34,4 +34,15 @@
     font-size: 3em;
     color: #fff;
   }
+
+  &__bottom {
+    margin-bottom: 1em;
+    font-size: 1em;
+  }
+
+  &__check {
+    font-size: 1em;
+    font-weight: bold;
+  }
+
 }

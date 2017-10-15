@@ -13,6 +13,12 @@
   &__content {
     padding-left: 29px;
   }
+
+  &__p {
+    @media (max-width: 599px) {
+      margin-bottom: 2 * $gutter;
+    }
+  }
 }
 
 .fillacheck {
