@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kaupa</title>
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab:300,700" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="grid.css">
 </head>
@@ -31,37 +31,45 @@
     <form method="get" action="./kaupa.html">
       <div class="row">
         <div class="col col-4 col-center">
-          <fieldset>
-            <legend class="heading">Persónuupplýsingar</legend>
-            <div>
-              <label for="name">Nafn:</label>
-              <input type="text" name="name" id="name" required>
+          <fieldset class="form">
+            <legend class="heading form--heading">Persónuupplýsingar</legend>
+            <div class="form form--container">
+              <label class="form form--label" for="name">Nafn:</label>
+              <input class="form--input" type="text" name="name" id="name" required>
             </div>
-            <div>
-              <label for="id-number">Kennitala</label>
-              <input type="text" name="id-number" placeholder="123456-7890" id="id-number">
+            <div class="form form--container">
+              <label class="form form--label" for="id-number">Kennitala</label>
+              <input class="form--input" type="text" name="id-number" placeholder="123456-7890" id="id-number">
             </div>
-            <div>
-            </div>
-            <div>
+            <div class="form form--container">
               <p>Kyn:</p>
-              <label>
-                <input type="radio" name="gender" value="male"> Karl
-              </label>
-              <label>
-                <input type="radio" name="gender" value="female"> Kona
-              </label>
-              <label>
-                <input type="radio" name="gender" value="other"> Annað
-              </label>
+              <nav>
+                <ul>
+                  <li class="form__list">
+                    <label>
+                      <input class="form__radio" type="radio" name="gender" value="male"> Kona
+                    </label>
+                  </li>
+                  <li class="form__list">
+                    <label>
+                      <input class="form__radio" type="radio" name="gender" value="female"> Karl
+                    </label>
+                  </li>
+                  <li class="form__list">
+                    <label>
+                      <input class="form__radio" type="radio" name="gender" value="other"> Annað
+                    </label>
+                  </li>
+                </ul>
+              </nav>
             </div>
-            <div>
-              <label for="tel">Sími:</label>
-              <input type="tel" name="tel" value="+354 812 3456" id="tel" required>
+            <div class="form form--container">
+              <label class="form form--label" for="tel">Sími:</label>
+              <input class="form--input" type="tel" name="tel" placeholder="+354 812 3456" id="tel" required>
             </div>
-            <div>
-              <label for="adress">Heimilisfang</label>
-              <input type="text" name="adress" id="adress" required>
+            <div class="form form--container">
+              <label class="form form--label" for="adress">Heimilisfang</label>
+              <input class="form--input" type="text" name="adress" id="adress" required>
             </div>
             <div>
               <label>
@@ -73,57 +81,62 @@
         </div>
 
         <div class="col col-4 col-center">
-          <fieldset>
-            <legend class="heading">Greiðsluupplýsingar</legend>
-            <div>
-              <label for="card-type">Greiða með:</label>
-              <select id="card-type">
+          <fieldset class="form">
+            <legend class="heading form--heading">Greiðsluupplýsingar</legend>
+            <div class="form form--container">
+              <label class="form form--label" for="card-type">Greiða með:</label>
+              <select class="form--selection" id="card-type">
                 <option value="kredit">Kreditkort</option>
                 <option value="debit">Debitkort</option>
                 <option value="amex">American Express</option>
               </select>
             </div>
-            <div>
-              <label for="card-name">Nafn á korti:</label>
-              <input type="text" name="card-name" id="card-name" required>
+            <div class="form form--container">
+              <label class="form form--label" for="card-name">Nafn á korti:</label>
+              <input class="form--input" type="text" name="card-name" id="card-name" required>
+            </div>
+            <div class="form form--container">
+              <label class="form form--label" for="card-nr">Kortanúmer:</label>
+              <input class="form--input" type="text" name="card-nr" placeholder="5999-9999-9999-9999" id="card-nr" required>
             </div>
             <div>
-              <label for="card-nr">Kortanúmer:</label>
-              <input type="text" name="card-nr" placeholder="5999-9999-9999-9999" id="card-nr" required>
-            </div>
-            <div>
-              <label for="exp-date-month">Mán</label>
-              <select name="exp-date-month" id="exp-date-month">
-                  <option value='01'>01</option>
-                  <option value='02'>02</option>
-                  <option value='03'>03</option>
-                  <option value='04'>04</option>
-                  <option value='05'>05</option>
-                  <option value='06'>06</option>
-                  <option value='07'>07</option>
-                  <option value='08'>08</option>
-                  <option value='09'>09</option>
-                  <option value='10'>10</option>
-                  <option value='11'>11</option>
-                  <option value='12'>12</option>
-                </select>
+              <p class="form form--label">Gildistími:</p>
+              <div class="form form--date">
+                <label class="form form--label" for="exp-date-month">Mán</label>
+                <select class="form--selection" name="exp-date-month" id="exp-date-month">
+                    <option value='01'>01</option>
+                    <option value='02'>02</option>
+                    <option value='03'>03</option>
+                    <option value='04'>04</option>
+                    <option value='05'>05</option>
+                    <option value='06'>06</option>
+                    <option value='07'>07</option>
+                    <option value='08'>08</option>
+                    <option value='09'>09</option>
+                    <option value='10'>10</option>
+                    <option value='11'>11</option>
+                    <option value='12'>12</option>
+                  </select>
 
-              <label for="exp-date-year">Ár</label>
-              <select name="exp-date-year" id="exp-date-year">
-                  <option value="17">2017</option>
-                  <option value="18">2018</option>
-                  <option value="19">2019</option>
-                  <option value="20">2020</option>
-                  <option value="21">2021</option>
-                  <option value="22">2022</option>
-                  <option value="23">2023</option>
-                </select>
+                <label class="form form--label" for="exp-date-year">Ár</label>
+                <select class="form--selection" name="exp-date-year" id="exp-date-year">
+                    <option value="17">2017</option>
+                    <option value="18">2018</option>
+                    <option value="19">2019</option>
+                    <option value="20">2020</option>
+                    <option value="21">2021</option>
+                    <option value="22">2022</option>
+                    <option value="23">2023</option>
+                  </select>
+              </div>
             </div>
           </fieldset>
         </div>
 
       </div>
-      <button class="button" type="submit" name="order">Panta</button>
+      <div class="row">
+        <button class="button col-center" type="submit" name="order">Panta</button>
+      </div>
     </form>
 
 
