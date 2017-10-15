@@ -1,25 +1,22 @@
 .index-header {
   display: flex;
-  flex-direction: column;
-
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 2em;
-  padding: 2em;
-
   width: 100%;
   min-height: 600px;
+  padding: 2em;
 
-  background: transparent url(bg.jpg) no-repeat fixed 50% 50%;
+  margin-right: 0;
+  margin-bottom: 2em;
+  margin-left: 0;
+
+  flex-direction: column;
+
+  background: transparent url("bg.jpg") no-repeat fixed 50% 50%;
   background-size: cover;
 
-
-
   .content {
-  display: flex;
-  margin: auto;
-  flex-direction: column;
-  align-items: center;
-
-}
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-items: center;
+  }
 }

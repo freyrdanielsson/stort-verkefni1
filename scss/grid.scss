@@ -6,11 +6,6 @@
   margin-left: -($gutter / 2);
 }
 
-.text {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-}
 // mixin sem reiknar nákvæmar prósentur útfrá dálkum
 @mixin columns($col: 1) {
   // margföldum með "1%" til að breyta gildi í prósentu gildi

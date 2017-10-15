@@ -1,0 +1,23 @@
+.check {
+  &__rod {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  &__img {
+    width: 25px;
+    margin-right: 4px;
+  }
+
+  &__content {
+    padding-left: 29px;
+  }
+}
+
+.fillacheck {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around;
+}
