@@ -1,6 +1,10 @@
 .form {
   display: flex;
-  border: 0;
+
+  &--main {
+    margin-bottom: $gutter;
+    border: 0;
+  }
 
   &--heading {
     margin: $gutter 0;
@@ -9,6 +13,7 @@
   }
 
   &--container {
+    display: flex;
     margin-bottom: $gutter;
     flex-direction: column;
   }
@@ -30,6 +35,7 @@
   }
 
   &--selection {
+    display: flex;
     font-size: inherit;
   }
 

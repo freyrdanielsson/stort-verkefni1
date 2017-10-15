@@ -29,8 +29,8 @@ main { /* stylelint-disable-line */
 
   overflow-x: hidden;
 
-  @media (min-width: $max-width) {
-    margin: auto;
+  @media (max-width: 600px) {
+    margin: 0 $gutter;
   }
 }
 

@@ -14,9 +14,9 @@
 
   &__info {
     display: flex;
-    margin: 1em 20%;
+    margin: $gutter 0;
     align-content: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
 
   &__text {

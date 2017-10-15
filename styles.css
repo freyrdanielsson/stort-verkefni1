@@ -26,9 +26,9 @@ main {
   max-width: 1200px;
   margin: 0 auto;
   overflow-x: hidden; }
-  @media (min-width: 1200px) {
+  @media (max-width: 600px) {
     main {
-      margin: auto; } }
+      margin: 0 20px; } }
 
 .check__rod {
   display: flex;
@@ -60,9 +60,9 @@ main {
     background-color: #333; }
   .footer__info {
     display: flex;
-    margin: 1em 20%;
+    margin: 20px 0;
     align-content: center;
-    justify-content: space-around; }
+    justify-content: space-evenly; }
   .footer__text {
     text-align: center; }
   .footer__logo {
@@ -205,8 +205,13 @@ main {
       width: 100%; }
     .col-sm-8 {
       width: 66.66667%; }
+    .col-sm-6 {
+      width: 50%; }
     .col-sm-4 {
       width: 33.33333%; } }
+  @media (max-width: 400px) {
+    .col-mm-12 {
+      width: 100%; } }
   .col-center {
     margin: 0 auto; }
 
@@ -268,13 +273,16 @@ main {
   background-size: cover; }
 
 .form {
-  display: flex;
-  border: 0; }
+  display: flex; }
+  .form--main {
+    margin-bottom: 20px;
+    border: 0; }
   .form--heading {
     margin: 20px 0;
     font-size: 1.5em;
     font-weight: 300; }
   .form--container {
+    display: flex;
     margin-bottom: 20px;
     flex-direction: column; }
   .form--date {
@@ -288,6 +296,7 @@ main {
     border-style: groove;
     border-radius: 4px; }
   .form--selection {
+    display: flex;
     font-size: inherit; }
   .form__list {
     list-style-type: none; }
