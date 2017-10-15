@@ -30,9 +30,17 @@ main {
     main {
       margin: 0 20px; } }
 
+.kvot {
+  display: flex;
+  margin-bottom: 20px;
+  flex-direction: row-reverse;
+  flex: 1;
+  flex-basis: 0; }
+
 .kvedja {
   display: flex;
   margin-top: 100px;
+  margin-bottom: 40px;
   flex-direction: column;
   align-items: center; }
 
@@ -209,15 +217,13 @@ main {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 60px;
   margin-right: -10px;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   margin-left: -10px; }
 
 .col {
   padding-right: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px; }
+  padding-left: 10px; }
   .col-12 {
     width: 100%; }
   .col-8 {
