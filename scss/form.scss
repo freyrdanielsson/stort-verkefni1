@@ -1,0 +1,44 @@
+.form {
+  display: flex;
+  border: 0;
+
+  &--heading {
+    margin: $gutter 0;
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+
+  &--container {
+    margin-bottom: $gutter;
+    flex-direction: column;
+  }
+
+  &--date {
+    justify-content: space-between;
+
+    .form--selection {
+      width: $gutter * 5;
+    }
+  }
+
+  &--input {
+    height: 2em;
+    padding: 4px;
+    font-size: inherit;
+    border-style: groove;
+    border-radius: 4px;
+  }
+
+  &--selection {
+    font-size: inherit;
+  }
+
+  &__list {
+    list-style-type: none;
+  }
+
+  &__radio {
+    margin: 1em 2em 1em 4px;
+  }
+
+}

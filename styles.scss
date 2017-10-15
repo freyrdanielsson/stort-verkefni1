@@ -14,7 +14,6 @@ html { /* stylelint-disable-line */
 }
 
 html { /* stylelint-disable-line */
-
   font-family: "Open Sans", helvetica, arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
@@ -46,3 +45,5 @@ main { /* stylelint-disable-line */
 @import "scss/grid";
 @import "scss/card";
 @import "scss/cardlist";
+@import "scss/kaupa_header";
+@import "scss/form";
