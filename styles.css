@@ -30,6 +30,24 @@ main {
     main {
       margin: auto; } }
 
+.check__rod {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; }
+
+.check__img {
+  width: 25px;
+  margin-right: 4px; }
+
+.check__content {
+  padding-left: 29px; }
+
+.fillacheck {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-around; }
+
 .footer {
   width: 100%;
   max-height: 200px;
@@ -60,14 +78,14 @@ main {
 
 .index-header {
   display: flex;
-  flex-direction: column;
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 2em;
-  padding: 2em;
   width: 100%;
   min-height: 600px;
-  background: transparent url(bg.jpg) no-repeat fixed 50% 50%;
+  padding: 2em;
+  margin-right: 0;
+  margin-bottom: 2em;
+  margin-left: 0;
+  flex-direction: column;
+  background: transparent url("bg.jpg") no-repeat fixed 50% 50%;
   background-size: cover; }
   .index-header .content {
     display: flex;
@@ -170,11 +188,6 @@ main {
   margin-right: -10px;
   margin-bottom: 20px;
   margin-left: -10px; }
-
-.text {
-  display: flex;
-  flex-direction: column;
-  height: 100%; }
 
 .col {
   padding-right: 10px;

@@ -27,9 +27,6 @@ main { /* stylelint-disable-line */
   max-width: $max-width;
   margin: 0 auto;
 
-
-  // þar sem við erum að eiga við neikvæð margin á grid, setjum overflow-x
-  // hér sem hidden, þá fáum við ekki lárétta skrunstiku
   overflow-x: hidden;
 
   @media (min-width: $max-width) {
@@ -37,6 +34,7 @@ main { /* stylelint-disable-line */
   }
 }
 
+@import "scss/check";
 @import "scss/footer";
 @import "scss/indexheader";
 @import "scss/button";
