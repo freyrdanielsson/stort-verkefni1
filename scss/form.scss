@@ -1,5 +1,6 @@
 .form {
   display: flex;
+  font-size: inherit;
   flex-direction: column;
 
   &--main {
@@ -14,30 +15,23 @@
   }
 
   &--container {
-    display: flex;
     margin-bottom: $gutter;
-    flex-direction: column;
   }
 
   &--date {
     justify-content: space-between;
+    flex-direction: row;
 
     .form--selection {
-      width: $gutter * 5;
+      width: 30%;
     }
   }
 
   &--input {
     height: 2em;
     padding: 4px;
-    font-size: inherit;
     border: solid 1px #aaa;
     border-radius: 4px;
-  }
-
-  &--selection {
-    display: flex;
-    font-size: inherit;
   }
 
   &__list {
@@ -54,6 +48,10 @@
     @media (max-width: 600px) {
       margin-bottom: auto;
     }
+  }
+
+  &__check {
+    margin-right: $gutter / 2;
   }
 
 }
