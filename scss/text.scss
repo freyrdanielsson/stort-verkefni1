@@ -1,9 +1,22 @@
 .kvot {
-  display: flex;
+
   margin-bottom: $gutter;
-  flex-direction: row-reverse;
 
-  flex: 1;
-  flex-basis: 0;
 
+  &__p {
+
+  }
+
+  &__k {
+    float: right;
+    width: 50%;
+    padding: 40px 20px;
+    margin-left: 70px;
+    font-size: 1.5em;
+    font-style: italic;
+
+    @media (max-width: 400px) {
+      width: 100%;
+    }
+  }
 }
