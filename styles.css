@@ -318,7 +318,8 @@ main {
   background-size: cover; }
 
 .form {
-  display: flex; }
+  display: flex;
+  flex-direction: column; }
   .form--main {
     margin-bottom: 20px;
     border: 0; }
@@ -338,7 +339,7 @@ main {
     height: 2em;
     padding: 4px;
     font-size: inherit;
-    border-style: groove;
+    border: solid 1px #aaa;
     border-radius: 4px; }
   .form--selection {
     display: flex;
@@ -347,3 +348,8 @@ main {
     list-style-type: none; }
   .form__radio {
     margin: 1em 2em 1em 4px; }
+  .form__submit {
+    margin-bottom: 80px; }
+    @media (max-width: 600px) {
+      .form__submit {
+        margin-bottom: auto; } }
