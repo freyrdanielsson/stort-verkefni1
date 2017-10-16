@@ -9,6 +9,10 @@
       to { opacity: 1; }
     }
 
+    @media (max-width: 470px) {
+      font-size: 1.5em;
+    }
+
   }
 
   &--header--two {
@@ -19,6 +23,10 @@
       from { opacity: 0; }
       50% { opacity: 0; }
       to { opacity: 1; }
+    }
+
+    @media (max-width: 470px) {
+      font-size: 3em;
     }
   }
 

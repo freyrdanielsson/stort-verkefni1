@@ -114,6 +114,10 @@ main {
   flex-direction: column;
   background: transparent url("bg.jpg") no-repeat fixed 50% 50%;
   background-size: cover; }
+  @media (max-width: 470px) {
+    .index-header {
+      padding-right: 0;
+      padding-left: 0; } }
   .index-header .content {
     display: flex;
     margin: auto;
@@ -154,6 +158,9 @@ main {
     opacity: 0; }
   to {
     opacity: 1; } }
+    @media (max-width: 470px) {
+      .button__header {
+        font-size: 1em; } }
   .button__bottom {
     width: auto;
     padding: 0.25em 2em;
@@ -174,6 +181,9 @@ main {
     opacity: 0; }
   to {
     opacity: 1; } }
+    @media (max-width: 470px) {
+      .heading--header--one {
+        font-size: 1.5em; } }
   .heading--header--two {
     margin-bottom: 1em;
     font-size: 4em;
@@ -186,6 +196,9 @@ main {
     opacity: 0; }
   to {
     opacity: 1; } }
+    @media (max-width: 470px) {
+      .heading--header--two {
+        font-size: 3em; } }
   .heading--header--menubar {
     font-size: 1.5em;
     font-weight: 700;
@@ -208,7 +221,7 @@ main {
   z-index: 2;
   display: flex;
   width: 100%;
-  padding: 5px;
+  padding: 5px 20px;
   color: #fff;
   justify-content: space-between;
   background-color: rgba(0, 0, 0, 0.8); }
@@ -218,8 +231,9 @@ main {
     flex-direction: row; }
   .menubar .button {
     width: auto;
-    padding: 5px; }
+    padding: 5px 8px; }
   .menubar .button__about {
+    padding-right: 20px;
     background-color: transparent;
     border: 0; }
 
@@ -267,6 +281,7 @@ main {
   justify-content: space-between; }
   .card__content {
     display: flex;
+    width: 95%;
     flex-direction: column;
     align-items: center; }
   .card__quote {
@@ -278,7 +293,7 @@ main {
     font-size: 1.25rem;
     font-weight: bold; }
   .card__img {
-    width: 100%;
+    width: 80%;
     min-width: 100px;
     max-width: 100%;
     border-radius: 50%; }
