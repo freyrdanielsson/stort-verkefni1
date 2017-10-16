@@ -3,15 +3,16 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+
   }
 
   &__img {
-    width: 25px;
+    width: 29px;
     margin-right: 4px;
   }
 
   &__content {
-    padding-left: 29px;
+    padding-left: 33px;
   }
 
   &__p {
@@ -26,4 +27,8 @@
   height: 100%;
   flex-direction: column;
   justify-content: space-around;
+}
+
+.checklisti {
+  margin: 8 * $gutter 0;
 }

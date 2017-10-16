@@ -30,12 +30,14 @@ main {
     main {
       margin: 0 20px; } }
 
-.kvot {
-  display: flex;
-  margin-bottom: 20px;
-  flex-direction: row-reverse;
-  flex: 1;
-  flex-basis: 0; }
+.kvot__p {
+  padding-right: 60px; }
+
+.kvot__k {
+  padding-top: 60px;
+  padding-right: 0;
+  padding-bottom: 60px;
+  padding-left: 60px; }
 
 .kvedja {
   display: flex;
@@ -50,11 +52,11 @@ main {
   align-items: flex-start; }
 
 .check__img {
-  width: 25px;
+  width: 29px;
   margin-right: 4px; }
 
 .check__content {
-  padding-left: 29px; }
+  padding-left: 33px; }
 
 @media (max-width: 599px) {
   .check__p {
@@ -65,6 +67,9 @@ main {
   height: 100%;
   flex-direction: column;
   justify-content: space-around; }
+
+.checklisti {
+  margin: 160px 0; }
 
 .footer {
   width: 100%;
@@ -190,8 +195,8 @@ main {
     margin-bottom: 1em;
     font-size: 1em; }
   .heading__check {
-    font-size: 1em;
-    font-weight: bold; }
+    font-size: 1.25em;
+    font-weight: 700; }
 
 .menubar {
   position: fixed;
@@ -274,26 +279,27 @@ main {
     max-width: 100%;
     border-radius: 50%; }
 
-.cardlist .cardlist__row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -10px;
-  margin-bottom: 20px;
-  margin-left: -10px; }
-
-.cardlist .cardlist__col {
-  display: flex;
-  align-items: stretch;
-  padding-right: 10px;
-  padding-left: 10px;
-  margin-bottom: 20px;
-  width: 100%; }
-  @media (min-width: 399px) {
-    .cardlist .cardlist__col {
-      width: 50%; } }
-  @media (min-width: 599px) {
-    .cardlist .cardlist__col {
-      width: 33.33333%; } }
+.cardlist {
+  margin-top: 200px; }
+  .cardlist .cardlist__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-bottom: 20px;
+    margin-left: -10px; }
+  .cardlist .cardlist__col {
+    display: flex;
+    align-items: stretch;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    width: 100%; }
+    @media (min-width: 399px) {
+      .cardlist .cardlist__col {
+        width: 50%; } }
+    @media (min-width: 599px) {
+      .cardlist .cardlist__col {
+        width: 33.33333%; } }
 
 .sub__header {
   display: flex;
