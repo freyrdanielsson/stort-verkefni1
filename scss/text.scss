@@ -1,12 +1,17 @@
 .kvot {
-  &__p {
-    padding-right: 3 * $gutter;
-  }
+
+  margin-bottom: $gutter;
 
   &__k {
-    padding-top: 3 * $gutter;
-    padding-right: 0;
-    padding-bottom: 3 * $gutter;
-    padding-left: 3 * $gutter;
+    float: right;
+    width: 50%;
+    padding: 40px 20px;
+    margin-left: 70px;
+    font-size: 1.5em;
+    font-style: italic;
+
+    @media (max-width: 400px) {
+      width: 100%;
+    }
   }
 }
