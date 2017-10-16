@@ -1,5 +1,6 @@
 .form {
   display: flex;
+  flex-direction: column;
 
   &--main {
     margin-bottom: $gutter;
@@ -30,7 +31,7 @@
     height: 2em;
     padding: 4px;
     font-size: inherit;
-    border-style: groove;
+    border: solid 1px #aaa;
     border-radius: 4px;
   }
 
@@ -45,6 +46,14 @@
 
   &__radio {
     margin: 1em 2em 1em 4px;
+  }
+
+  &__submit {
+    margin-bottom: $gutter * 4;
+
+    @media (max-width: 600px) {
+      margin-bottom: auto;
+    }
   }
 
 }
