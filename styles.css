@@ -333,7 +333,9 @@ main {
   background-size: cover; }
 
 .form {
-  display: flex; }
+  display: flex;
+  font-size: inherit;
+  flex-direction: column; }
   .form--main {
     margin-bottom: 20px;
     border: 0; }
@@ -342,23 +344,25 @@ main {
     font-size: 1.5em;
     font-weight: 300; }
   .form--container {
-    display: flex;
-    margin-bottom: 20px;
-    flex-direction: column; }
+    margin-bottom: 20px; }
   .form--date {
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-direction: row; }
     .form--date .form--selection {
-      width: 100px; }
+      width: 30%; }
   .form--input {
     height: 2em;
     padding: 4px;
-    font-size: inherit;
-    border-style: groove;
+    border: solid 1px #aaa;
     border-radius: 4px; }
-  .form--selection {
-    display: flex;
-    font-size: inherit; }
   .form__list {
     list-style-type: none; }
   .form__radio {
     margin: 1em 2em 1em 4px; }
+  .form__submit {
+    margin-bottom: 80px; }
+    @media (max-width: 600px) {
+      .form__submit {
+        margin-bottom: auto; } }
+  .form__check {
+    margin-right: 10px; }
