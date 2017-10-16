@@ -13,6 +13,11 @@
   background: transparent url("bg.jpg") no-repeat fixed 50% 50%;
   background-size: cover;
 
+  @media (max-width: 470px) {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
   .content {
     display: flex;
     margin: auto;
