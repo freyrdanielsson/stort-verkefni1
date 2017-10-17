@@ -167,7 +167,7 @@ main {
         font-size: 1em; } }
   .button__bottom {
     width: auto;
-    padding: 0.25em 2em;
+    padding: 0.4em 2em;
     font-size: 1.5em; }
     @media (max-width: 435px) {
       .button__bottom {
@@ -213,8 +213,8 @@ main {
     font-size: 3em;
     color: #fff; }
   .heading__bottom {
-    margin-bottom: 1em;
-    font-size: 1em; }
+    margin-bottom: 20px;
+    font-size: 1.25em; }
   .heading__check {
     font-size: 1.25em;
     font-weight: 700; }
