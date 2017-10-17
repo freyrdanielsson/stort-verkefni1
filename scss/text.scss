@@ -14,4 +14,10 @@
       width: 100%;
     }
   }
+
+  &__footer {
+    margin-top: $gutter;
+    font-size: 14px;
+    font-style: normal;
+  }
 }
