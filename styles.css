@@ -93,7 +93,7 @@ main {
     display: flex;
     margin: 20px 0;
     align-content: center;
-    justify-content: space-evenly; }
+    justify-content: space-around; }
   .footer__text {
     text-align: center; }
   .footer__logo {
