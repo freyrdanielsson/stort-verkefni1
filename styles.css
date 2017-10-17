@@ -35,8 +35,8 @@ main {
   .kvot__k {
     float: right;
     width: 50%;
-    padding: 40px 20px;
-    margin-left: 70px;
+    padding: 40px;
+    margin-left: 80px;
     font-size: 1.5em;
     font-style: italic; }
     @media (max-width: 400px) {
