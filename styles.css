@@ -264,7 +264,7 @@ main {
       width: 50%; }
     .col-sm-4 {
       width: 33.33333%; } }
-  @media (max-width: 400px) {
+  @media (max-width: 480px) {
     .col-mm-12 {
       width: 100%; } }
   .col-center {
